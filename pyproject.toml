@@ -7,6 +7,7 @@ select = [
 ]
 ignore = [
     "E402",  # import not at top
+    "E501",  # line length too long
     "E703",  # useless semicolon
 ]
 extend-include = ["*.ipynb"]

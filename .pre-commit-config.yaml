@@ -9,8 +9,8 @@ repos:
   - repo: https://github.com/charliermarsh/ruff-pre-commit
     rev: v0.1.8
     hooks:
+      - id: ruff-format
+        types_or: [python, pyi, jupyter]
       - id: ruff
         args: [--fix]
-        types_or: [python, pyi, jupyter]
-      - id: ruff-format
         types_or: [python, pyi, jupyter]
