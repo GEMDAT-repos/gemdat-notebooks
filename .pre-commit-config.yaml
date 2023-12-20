@@ -6,12 +6,11 @@ repos:
     rev: v0.2.0
     hooks:
       - id: nbcheckorder
-  - repo: https://github.com/nbQA-dev/nbQA
-    rev: 1.7.0
+  - repo: https://github.com/charliermarsh/ruff-pre-commit
+    rev: v0.1.8
     hooks:
-      - id: nbqa-yapf
-        additional_dependencies: [toml, yapf]
-        types_or: [jupyter]
-      - id: nbqa-ruff
-        args: [--fix, --ignore=E402]
-        types_or: [jupyter]
+      - id: ruff-format
+        types_or: [python, pyi, jupyter]
+      - id: ruff
+        args: [--fix]
+        types_or: [python, pyi, jupyter]

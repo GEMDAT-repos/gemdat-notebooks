@@ -1,0 +1,2 @@
+gemdat
+pymatgen
